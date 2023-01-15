@@ -34,9 +34,10 @@ public class Lesson6 {
             for (int j = 0; j < twoDimArray1.length; j++) {
                 System.out.print(result[i][j] + " ");
             }
+            System.out.println();
         }
         int result2 = getMaxElement(result);
-        System.out.println("\nMax element: " + result2);
+        System.out.println("Max element: " + result2);
     }
 }
 
