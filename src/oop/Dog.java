@@ -6,10 +6,16 @@ public class Dog {
     int age;
     double weight;
     int speed;
+
+    public void Message(){
+        System.out.println("Doggies!");
+    }
 }
 
 class Main {
     public static void main(String[] args) {
+        Dog dog = new Dog();
+
         Dog dog1 = new Dog();
         dog1.breed = "Pitbull";
         dog1.name = "Marik";
@@ -45,6 +51,7 @@ class Main {
         dog5.weight = 32.8;
         dog5.speed = 32;
 
+        dog.Message();
         System.out.println(dog1.breed + ":" + "\n" + dog1.name + "\n" + dog1.age + "\n" + dog1.weight + "\n" + dog1.speed);
         System.out.println(dog2.breed + ":" + "\n" + dog2.name + "\n" + dog2.age + "\n" + dog2.weight + "\n" + dog2.speed);
         System.out.println(dog3.breed + ":" + "\n" + dog3.name + "\n" + dog3.age + "\n" + dog3.weight + "\n" + dog3.speed);
